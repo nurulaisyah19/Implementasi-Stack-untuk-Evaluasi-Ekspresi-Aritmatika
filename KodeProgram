@@ -1,1 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+bool check(char ch, vector<char>range);
+vector<string> converTolnfix(string input);
+string removeWhintecpace(string str);
+
+int main(){
+    vector<string> infix;
+    string input;
+    getline(cin, input);
+
+    infix =
+convertTolfix(removeWhitespace(input));
+    vector<string>::iterator it = infix.begin();
+    while(it != infix.end()){
+        cout << *it << " ";
+        it++;
+    }
+    cout << endl;
+}
+
+bool check(char ch, vector<char>range){
+     vector<char>::iterator it;
+     it =
+find(range.begin(), range.end(), ch);
 
